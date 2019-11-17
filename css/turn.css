@@ -45,9 +45,10 @@
     border-radius: 30px;
     width: 10%;
     height: 5%;
-    font-size: 100%;
+    font-size: 20px;
     padding: 2% 2%;
-    color: white;
+    font-weight: bold;
+    color: red;
     background-color: aqua;
     text-decoration: none;
     padding-bottom: 3%;
