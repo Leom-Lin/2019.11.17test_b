@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>分页面</title>
+    <style>
+
+        html,body{
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+        }
+        div {
+            width: 800px;
+            height: 100%;
+            background-color: salmon;
+            position: relative;
+            margin: 0 auto;
+            /*overflow: hidden;*/
+            background-image: url(images/bg.jpg);
+            background-size: cover;
+        }
+        .box01{
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 300px;
+            height: 150px;
+        }
+         .box01 img{
+             width: 100%;
+             height: 100%;
+             position: absolute;
+             top: 0;
+             left: 0;
+        }
+        .box01 img:nth-of-type(1){
+            z-index: 888;
+        }
+        .box01:hover img:nth-of-type(1){
+            opacity: 0;
+        }
+
+        .box02 {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            top: 300px;
+            right: 0;
+        }
+        .box02 img:nth-of-type(1) {
+            width: 100%;
+            height: 100%;
+        }
+        .box02 img:nth-of-type(2){
+            width: 300px;
+            height: 420px;
+            position: absolute;
+            left: -300px;
+            top: -160px;
+            display: none;
+        }
+        .box02:hover img:nth-of-type(2){
+            display: block;
+        }
+
+        .box03{
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            top: 400px;
+            left: -840px;
+            animation: sport 1s linear 1s 1 forwards;
+        }
+        @keyframes sport {
+            to{
+                transform: translateX(900px);
+            }
+
+        }
+    </style>
+</head>
+<body>
+<div>
+    <div class="box01"><img src="images/1.jpg" alt="">
+        <img src="images/2.jpg" alt="">
+    </div>
+    <div class="box02">
+        <img src="images/ysf.jpg" alt="">
+        <img src="images/ys.jpg" alt="">
+    </div>
+    <div class="box03">
+        <img src="images/panda.jpg" alt="">
+    </div>
+</div>
+</body>
+</html>
