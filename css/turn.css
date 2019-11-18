@@ -169,7 +169,7 @@ ul li:hover img{
 }
 .wrap ul li:nth-of-type(5){
     /*background-color: azure;*/
-    transform: rotateY(240deg)  translateZ（270px);
+    transform: rotateY(240deg)  translateZ(270px);
 }
 .wrap ul li:nth-of-type(6){
     /*background-color: brown;*/
